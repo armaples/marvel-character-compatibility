@@ -214,3 +214,17 @@ function autoComplete() {
     // create div element to contain items
     // for loop 
 }
+    const options = {
+        method: 'GET',
+        headers: {
+            'X-RapidAPI-Key': '0f9b246568msh4ee8442f843029bp1700a9jsn24b94ab24d66',
+            'X-RapidAPI-Host': 'love-calculator.p.rapidapi.com'
+        }
+    };
+    marvChar = "jimmy"
+    userName = "jackson"
+    var apiUrl = "https://love-calculator.p.rapidapi.com/getPercentage?" + "sname=" + marvChar + "&fname=" + userName;
+    fetch(apiUrl, options)
+        .then(response => response.json())
+        .then(response => console.log(response))
+        .catch(err => console.error(err));
