@@ -227,4 +227,8 @@ function autoComplete() {
     fetch(apiUrl, options)
         .then(response => response.json())
         .then(response => console.log(response))
+<<<<<<< HEAD
         .catch(err => console.error(err));
+=======
+        .catch(err => console.error(err));
+>>>>>>> main
