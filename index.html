@@ -10,24 +10,58 @@
 <!-- Load reset file first to avoid reverting styles -->
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+          theme: {  screens: {
+      sm: '480px',
+      md: '768px',
+      lg: '976px',
+      xl: '1440px',
+    },
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+      
+      <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+      </style>
+      
+      <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
     <title>Marvel Cinematic Universe Of Characters</title>
 </head>
-<body>
+<body class="prose">
+    <div class="text-center">
     <header class="header">
-        <h1 class="head">Who Is This Marvel Character?</h1>
+        <h1 class="head">MARVELOUS LOVE</h1>
     </header>
 
     <div class="card">
         <div class="card-header">
-            <h2>Select a character within the MCU to learn more about them</h2>
+            <h2>In a universe of violence, one will always find MARVELous love. Enter in a charcter name and help them find their match! </h2>
         </div>
         <div class="card-body">
             <textarea id="userInput" placeholder="Type in a MCU character here!" aria-label="Search"></textarea>
         </div>
         <div class="card-footer">
-            <button id="search" class="searchBTN">Search</button>
+            <button type="button" class="btn-primary transition duration-300 ease-in-out focus:outline-none focus:shadow-outline bg-purple-700 hover:bg-purple-900 text-white font-normal py-2 px-4 mr-1 rounded">Search For Lover</button>
         </div>
     </div>
+    <div class="result">
+        <h3>Now This Is Marvelous!</h3>
+    </div>
+    
 
 
 
@@ -46,5 +80,10 @@
 <!-- Added link to jQuery library -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="./assets/js/script.js"></script>
+    </div>
 </body>
+
+<footer class="footer text-center">
+    <p>Not satisfied with this result? Enter in another character name and take a guess on who their match will be!</p>
+</footer>
 </html>
