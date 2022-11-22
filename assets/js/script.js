@@ -1,14 +1,47 @@
+// Create array of all Marvel Characters
+var marvelCharacters = [];
+
+// Gets names 
+$(document).ready(function() {
+
+    var requestUrl = "http://gateway.marvel.com/v1/public/characters?ts=1&apikey=f28e122cf392b150e1e8bf5ca2a62842&hash=3abdba83f20f29cc7e578a0e44005e56";
+        console.log(requestUrl);
+
+    // Create autocomplete function for input field
+    $("#userInput").autocomplete({
+        minLength: 1,
+        source: function(request, response, url){
+            $.ajax({
+                url: requestUrl,
+                dataType: "json",
+                data: {
+                    nameStartsWith: request.term,
+                    limit: 10,
+                },
+                success: function (data) {
+                    console.log(data)
+                    response($.map(data.data.results, function(item) {
+                        for (let i = 0; i < 10; i++) {
+                            console.log(data.data.results[i].name)
+                            return data.data.results[i].name
+                        }
+                    }))
+                }
+            })
+        }
+    });
+});
+        
+        
+            
+                
+                
+                    
+                    
+                            
+                            
 
 
-var requestUrl = 'http://gateway.marvel.com/v1/public/comics?ts=1&apikey=f28e122cf392b150e1e8bf5ca2a62842&hash=3abdba83f20f29cc7e578a0e44005e56';
-
-fetch(requestUrl)
-    .then(function (response) {
-        return response.json();
-    })
-    .then(function(data) {
-        console.log(data)
-    })
 
     const options = {
         method: 'GET',
@@ -23,4 +56,4 @@ fetch(requestUrl)
     fetch(apiUrl, options)
         .then(response => response.json())
         .then(response => console.log(response))
-        .catch(err => console.error(err));
+        .catch(err => console.error(err))
