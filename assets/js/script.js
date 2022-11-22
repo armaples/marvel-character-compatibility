@@ -16,15 +16,14 @@ $(document).ready(function() {
                 dataType: "json",
                 data: {
                     nameStartsWith: request.term,
-                    limit: 10,
+                    limit: 5,
                 },
                 success: function (data) {
                     console.log(data)
-                    response($.map(data.data.results, function(item) {
-                        for (let i = 0; i < 10; i++) {
-                            console.log(data.data.results[i].name)
-                            return data.data.results[i].name
-                        }
+                    response($.map(data.data.results, function(array, index) {
+                            var autoName = data.data.results[index].name;
+                            console.log(autoName);
+                            return autoName;
                     }))
                 }
             })
