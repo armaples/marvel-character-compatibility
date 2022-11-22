@@ -1,0 +1,17 @@
+/* autocomplete styling */
+
+.ui-menu, .ui-menu-item, .auto-complete {
+    z-index: 1000;
+    list-style-type: none;
+    width: 250px;
+    cursor: pointer;
+}
+
+.ui-menu {
+    background-color: white;
+    border: 1px solid black;
+}
+
+#userInput {
+    width: 250px;
+}
