@@ -42,17 +42,44 @@ $(document).ready(function() {
 
 
 
-    const options = {
+var resultContainer = document.getElementById('result');
+var searchLoveButton = document.getElementById('love-button');
+ 
+function runLove() {
+const options = {
         method: 'GET',
         headers: {
             'X-RapidAPI-Key': '0f9b246568msh4ee8442f843029bp1700a9jsn24b94ab24d66',
             'X-RapidAPI-Host': 'love-calculator.p.rapidapi.com'
         }
     };
-    marvChar = "jimmy"
+    marvChar = 'jerry'
     userName = "jackson"
-    var apiUrl = "https://love-calculator.p.rapidapi.com/getPercentage?" + "sname=" + marvChar + "&fname=" + userName;
+    var apiUrl = "https://love-calculator.p.rapidapi.com/getPercentage?" + "sname=" + userName + "&fname=" + marvChar;
     fetch(apiUrl, options)
-        .then(response => response.json())
-        .then(response => console.log(response))
-        .catch(err => console.error(err))
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (data) {
+            console.log(data);
+            
+                console.log("are you working?????????")
+            var loveFName = document.createElement('p');
+            var lovePercent = document.createElement('p');
+            var loveRes = document.createElement('p');
+            var loveSName = document.createElement('p');
+            loveFName.textContent = data.fname;
+            lovePercent.textContent = data.percentage;
+            loveRes.textContent = data.result;
+            loveSName.textContent = data.sname;
+            resultContainer.appendChild(loveFName);
+            resultContainer.appendChild(lovePercent);
+            resultContainer.appendChild(loveRes);
+            resultContainer.appendChild(loveSName);
+        })};
+searchLoveButton.addEventListener('click', runLove); 
+
+
+// .then(response => response.json())
+// .then(response => console.log(response))
+// .catch(err => console.error(err))
