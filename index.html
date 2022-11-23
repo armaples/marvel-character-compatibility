@@ -41,27 +41,36 @@
       <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
     <title>Marvel Cinematic Universe Of Characters</title>
 </head>
-<body class="prose">
-    <div class="text-center">
+<body>
+  <div class="prose m-52 text-center py-5">
     <header class="header">
-        <h1 class="head">MARVELOUS LOVE</h1>
+        <h1 class="top bg-blue-700">MARVELOUS LOVE</h1>
     </header>
 
     <div class="card">
-        <div class="card-header">
+        <div class="card-header text-sm">
             <h2>In a universe of violence, one will always find MARVELous love. Enter in a charcter name and help them find their match! </h2>
-        </div>
+        
         <div class="card-body">
-            <textarea id="userInput" placeholder="Type in a MCU character here!" aria-label="Search"></textarea>
-        </div>
+            <textarea id="userInput" placeholder="Type in a Marvel character here!" aria-label="Search"></textarea>
+        
         <div class="card-footer">
-            <button type="button" id = "love-button" class="btn-primary transition duration-300 ease-in-out focus:outline-none focus:shadow-outline bg-purple-700 hover:bg-purple-900 text-white font-normal py-2 px-4 mr-1 rounded">Search For Lover</button>
-        </div>
-    </div>
+            <button type="button" id = "love-button" class="btn-primary transition duration-300 ease-in-out focus:outline-none focus:shadow-outline bg-purple-700 hover:bg-purple-900 text-white font-normal py-2 px-4 mr-1 rounded">Search Marvel Lover</button>
+        
+    
+    <div class="userCard">
+    
+        <div class="userBody">
+          <textarea id="userInput" placeholder="Type in a Marvel character here!" aria-label="Search"></textarea>
+      
+      <div class="userFooter">
+          <button type="button" id = "love-button" class="btn-primary transition duration-300 ease-in-out focus:outline-none focus:shadow-outline bg-purple-700 hover:bg-purple-900 text-white font-normal py-2 px-4 mr-1 rounded">Search User Lover</button>
+    
     <div class="result">
-      <div id="result"></div>
-        <h3>Now This Is Marvelous!</h3>
-    </div>
+
+      <p>Not satisfied with this result? Enter in another character/user name to get a different result!</p>
+    
+
     
 
 
@@ -86,6 +95,6 @@
 </body>
 
 <footer class="footer text-center">
-    <p>Not satisfied with this result? Enter in another character name and take a guess on who their match will be!</p>
-</footer>
+    <!-- <p>Not satisfied with this result? Enter in another character name and take a guess on who their match will be!</p>
+</footer> -->
 </html>
