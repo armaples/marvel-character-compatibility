@@ -8,12 +8,11 @@ body{
 /* autocomplete styling */
 
 .ui-menu, .ui-menu-item, .auto-complete {
-    z-index: 2;
+    z-index: 1000;
     list-style-type: none;
-    position: absolute;
     top: 0;
     cursor: pointer;
-    max-height: 200px;
+    max-height: 20vh;
     overflow-y: auto;
 }
 
@@ -21,6 +20,7 @@ body{
     background-color: white;
     border: 1px solid black;
     padding: 5px;
+    position: absolute;
 }
 
 #userInput {
