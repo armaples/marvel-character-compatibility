@@ -1,25 +1,26 @@
 body{
     display: flex;
     justify-content: center;
+    /* align-items: center; */
     background-color: red;
 }
-
-
-
-
 
 /* autocomplete styling */
 
 .ui-menu, .ui-menu-item, .auto-complete {
     z-index: 1000;
     list-style-type: none;
-    width: 250px;
+    top: 0;
     cursor: pointer;
+    max-height: 20vh;
+    overflow-y: auto;
 }
 
 .ui-menu {
     background-color: white;
     border: 1px solid black;
+    padding: 5px;
+    position: absolute;
 }
 
 #userInput {

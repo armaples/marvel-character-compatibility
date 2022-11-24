@@ -10,6 +10,7 @@ $(document).ready(function() {
     // Create autocomplete function for input field
     $("#userInput").autocomplete({
         minLength: 1,
+        
         source: function(request, response, url){
             $.ajax({
                 url: requestUrl,
@@ -30,15 +31,7 @@ $(document).ready(function() {
         }
     });
 });
-        
-        
-            
-                
-                
-                    
-                    
-                            
-                            
+                             
 
 
 
