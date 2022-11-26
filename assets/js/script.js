@@ -37,7 +37,8 @@ $(document).ready(function() {
 
 var resultContainer = document.getElementById('result');
 var searchLoveButton = document.getElementById('love-button');
- 
+
+
 function runLove() {
 const options = {
         method: 'GET',
@@ -46,8 +47,8 @@ const options = {
             'X-RapidAPI-Host': 'love-calculator.p.rapidapi.com'
         }
     };
-    marvChar = 'jerry'
-    userName = "jackson"
+    marvChar = document.getElementById('userInput').value
+    userName = document.getElementById('nameInput').value
     var apiUrl = "https://love-calculator.p.rapidapi.com/getPercentage?" + "sname=" + userName + "&fname=" + marvChar;
     fetch(apiUrl, options)
         .then(function (response) {
@@ -61,18 +62,17 @@ const options = {
             var lovePercent = document.createElement('p');
             var loveRes = document.createElement('p');
             var loveSName = document.createElement('p');
-            loveFName.textContent = data.fname;
-            lovePercent.textContent = data.percentage;
+            loveFName.textContent = data.fname + " +";
+            lovePercent.textContent = data.percentage + "% compatible! ";
             loveRes.textContent = data.result;
-            loveSName.textContent = data.sname;
+            loveSName.textContent = data.sname + " are";
             resultContainer.appendChild(loveFName);
+            resultContainer.appendChild(loveSName);
             resultContainer.appendChild(lovePercent);
             resultContainer.appendChild(loveRes);
-            resultContainer.appendChild(loveSName);
+            
         })};
 searchLoveButton.addEventListener('click', runLove); 
 
 
-// .then(response => response.json())
-// .then(response => console.log(response))
-// .catch(err => console.error(err))
+
