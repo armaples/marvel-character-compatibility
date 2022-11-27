@@ -52,7 +52,6 @@ MARVELous Love is an app that allows you to test your compatibility with any Mar
 ## Credits
 - [Professional README Guide](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide) 
 - [Choose A License](https://choosealicense.com/licenses/mit/)
-- [Adobe Fonts](https://fonts.adobe.com/)
 - [Marvel API](https://developer.marvel.com/)
 - [LoveCalculator API](https://rapidapi.com/ajith/api/love-calculator)
 
