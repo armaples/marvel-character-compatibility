@@ -23,6 +23,11 @@ body{
     position: absolute;
 }
 
+.ui-menu-item:hover {
+    background-color: red;
+    color: white;
+}
+
 #userInput {
     width: 250px;
 }

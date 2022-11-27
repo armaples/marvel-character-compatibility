@@ -16,9 +16,9 @@ MARVELous Love is an app that allows you to test your compatibility with any Mar
 ## Installation
 
 - Navigate to the 'clone' button on the github repository and use either SSH or HTTPS link to clone the repository to your computer.
-![Screenshot](png goes here)
+![Screenshot](./assets/images/installation1.png)
 - On your computer, navigate to the 'marvel-character-compatibility' directory and open the index.html file in your browser. 
-![Screenshot](png goes here)
+![Screenshot](./assets/images/installation2.png)
 
 ## Application Preview
 
@@ -46,15 +46,14 @@ MARVELous Love is an app that allows you to test your compatibility with any Mar
 
 ## Important Links
 
-- [Github Repository](https://github.com/armaples/i-hate-mondays)
-- [Deployed Application](https://armaples.github.io/i-hate-mondays)
+- [Github Repository](https://github.com/armaples/marvel-character-compatibility)
+- [Deployed Application](https://armaples.github.io/marvel-character-compatibility)
 
 ## Credits
 - [Professional README Guide](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide) 
 - [Choose A License](https://choosealicense.com/licenses/mit/)
-- [Adobe Fonts](https://fonts.adobe.com/)
-- [Marvel API](https://www.nicepng.com/ourpic/u2a9o0o0q8e6o0q8_garfield-the-cat-animated-garfield/)
-- [LoveCalculator API]()
+- [Marvel API](https://developer.marvel.com/)
+- [LoveCalculator API](https://rapidapi.com/ajith/api/love-calculator)
 
 ## License
 
