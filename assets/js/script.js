@@ -57,6 +57,7 @@ const options = {
         .then(function (data) {
             console.log(data);
             
+            
                 console.log("are you working?????????")
             var loveFName = document.createElement('p');
             var lovePercent = document.createElement('p');
@@ -70,7 +71,10 @@ const options = {
             resultContainer.appendChild(loveSName);
             resultContainer.appendChild(lovePercent);
             resultContainer.appendChild(loveRes);
-            
+            localStorage.setItem('firstName', loveFName.textContent);
+            localStorage.setItem('secondName', loveSName.textContent);
+            localStorage.setItem('lovePercent', lovePercent.textContent);
+            localStorage.setItem('loveRes', loveRes.textContent);
         })};
 searchLoveButton.addEventListener('click', runLove); 
 
