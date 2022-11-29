@@ -37,10 +37,7 @@ $(document).ready(function() {
 var resultContainer = document.getElementById('result');
 var searchLoveButton = document.getElementById('love-button');
 
-<<<<<<< HEAD
-=======
 // this entire function is the Love Calc API 
->>>>>>> main
 function runLove() {
 const options = {
         method: 'GET',
@@ -81,9 +78,7 @@ const options = {
             localStorage.setItem('secondName', loveSName.textContent);
             localStorage.setItem('lovePercent', lovePercent.textContent);
             localStorage.setItem('loveRes', loveRes.textContent);
-        })};
-
-
+})};
 
 
 // clears the prior results, if any 
@@ -94,11 +89,5 @@ function clearResults() {
 
 }
 
-
-
-
 searchLoveButton.addEventListener('click', clearResults);
 searchLoveButton.addEventListener('click', runLove); 
-
-
-
