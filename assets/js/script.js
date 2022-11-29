@@ -82,10 +82,6 @@ const options = {
             localStorage.setItem('lovePercent', lovePercent.textContent);
             localStorage.setItem('loveRes', loveRes.textContent);
         })};
-<<<<<<< HEAD
-        
-searchLoveButton.addEventListener('click', runLove); 
-=======
 
 
 
@@ -106,4 +102,3 @@ searchLoveButton.addEventListener('click', runLove);
 
 
 
->>>>>>> main
