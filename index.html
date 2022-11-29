@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Marvel" />
 <!-- Load reset file first to avoid reverting styles -->
-  <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -43,15 +43,16 @@
 </head>
 <body>
   <!-- Class=prose will allow us to style within this div using tailwindcss -->
-  <div id="main" class="prose m-52 text-center">
+  <div id="main" class="prose m-16  text-center">
    
     <header class="header">
-        <h1 class="bg-blue-700">MARVELOUS LOVE</h1>
+        <h1 class="bg-red-700 text-white text-6xl">MARVELOUS LOVE</h1>
+        <div id="heart" class="animate-pulse"></div>
     </header>
 
     <div id="marvChar" class="card-header" >
     
-            <h2>In a universe of violence, one will always find MARVELous love. Enter in a charcter name and help them find their match! </h2>
+            <h2 class= "text-white mt-0 text-4xl">In a universe of violence, one will always find MARVELous love. Enter in a character name and help them find their match! </h2>
         
         <div class="marvTextBox">
             <textarea id="userInput" placeholder="Type in a Marvel character here!" aria-label="Search"></textarea>
@@ -62,13 +63,13 @@
     
     <div id="userName">
     
-        <div class="userTextBox">
+        <div class="userTextBox ">
           <textarea id="nameInput" placeholder="Type in your name here!" aria-label="Search"></textarea>
       
     
     
           <div id="searchLoveButton">
-          <button type="button" id = "love-button" class="btn-primary transition duration-300 ease-in-out focus:outline-none focus:shadow-outline bg-purple-700 hover:bg-purple-900 text-white font-normal py-2 px-4 mr-1 rounded">Search For Love</button>
+          <button type="button" id = "love-button" class="btn-primary transition duration-300 ease-in-out focus:outline-none focus:shadow-outline bg-red-700 hover:bg-red-900 text-white font-normal py-2 px-4 mr-1 rounded">Search For Love</button>
     
    
           <div id="result">
@@ -82,6 +83,6 @@
     </div>
 </body>
 
-<footer class="footer text-center my-20">
+<footer class="footer text-center my-20 font-mono">
   <p>Not satisfied with this result? Enter in another character/user name to get a different result!</p>
 </html>
