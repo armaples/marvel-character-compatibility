@@ -38,7 +38,7 @@ $(document).ready(function() {
 var resultContainer = document.getElementById('result');
 var searchLoveButton = document.getElementById('love-button');
 
-
+// this entire function is the Love Calc API 
 function runLove() {
 const options = {
         method: 'GET',
@@ -59,23 +59,43 @@ const options = {
             
             
                 console.log("are you working?????????")
+            // takes the data and creates HTML p's for each one
             var loveFName = document.createElement('p');
             var lovePercent = document.createElement('p');
             var loveRes = document.createElement('p');
             var loveSName = document.createElement('p');
+            // adds flavor text
             loveFName.textContent = data.fname + " +";
             lovePercent.textContent = data.percentage + "% compatible! ";
             loveRes.textContent = data.result;
             loveSName.textContent = data.sname + " are";
+            // actually adds on those p's
             resultContainer.appendChild(loveFName);
             resultContainer.appendChild(loveSName);
             resultContainer.appendChild(lovePercent);
             resultContainer.appendChild(loveRes);
+            // stores results in LocalStorage
             localStorage.setItem('firstName', loveFName.textContent);
             localStorage.setItem('secondName', loveSName.textContent);
             localStorage.setItem('lovePercent', lovePercent.textContent);
             localStorage.setItem('loveRes', loveRes.textContent);
         })};
+
+
+
+
+// clears the prior results, if any 
+function clearResults() {
+    console.log('CLEAR-RESULTS');
+    var resClear = document.getElementById('result')
+    resClear.textContent = "";
+
+}
+
+
+
+
+searchLoveButton.addEventListener('click', clearResults);
 searchLoveButton.addEventListener('click', runLove); 
 
 
