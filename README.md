@@ -10,8 +10,7 @@ MARVELous Love is an app that allows you to test your compatibility with any Mar
 - [Languages Used](#languages-used)
 - [Important Links](#important-links)
 - [Credits](#credits)
-- [License](#license)
-    - [MIT License](#mit-license)
+- [MIT License](#mit-license)
 
 ## Installation
 
@@ -59,9 +58,7 @@ MARVELous Love is an app that allows you to test your compatibility with any Mar
 - [Marvel API](https://developer.marvel.com/)
 - [LoveCalculator API](https://rapidapi.com/ajith/api/love-calculator)
 
-## License
-
-### MIT License
+## MIT License
 
 Copyright (copy) 2022 MARVELous Love - Alexie Alcide, Alyssa Maples, Adam Pierce, Ethan Quinlan
 
