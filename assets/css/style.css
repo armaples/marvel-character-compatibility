@@ -2,7 +2,7 @@ body {
     display: flex;
     justify-content: center;
     /* align-items: center; */
-    background-color: red;
+    background-color: rgb(31, 19, 102);
 }
 
 /* autocomplete styling */
