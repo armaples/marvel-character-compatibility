@@ -40,7 +40,8 @@ var searchLoveButton = document.getElementById('love-button');
 
 // this entire function is the Love Calc API 
 function runLove() {
-const options = {
+    
+    const options = {
         method: 'GET',
         headers: {
             'X-RapidAPI-Key': '0f9b246568msh4ee8442f843029bp1700a9jsn24b94ab24d66',
@@ -58,7 +59,7 @@ const options = {
             console.log(data);
             
             
-                console.log("are you working?????????")
+                
             // takes the data and creates HTML p's for each one
             var loveFName = document.createElement('p');
             var lovePercent = document.createElement('p');
@@ -91,12 +92,29 @@ function clearResults() {
     resClear.textContent = "";
 
 }
+//checks to see if the inputs are empty, stopping the calculations from occuring. Otherwise, runs the API calls
+function checkInputs() {
+    marvChar = document.getElementById('userInput').value
+    userName = document.getElementById('nameInput').value
+    if (!userName||!marvChar) {
+        console.log("zoobeedoobee");
+
+        return 
+    } else {
+        console.log('weinerschnitzel');
+        runLove();
+    }
+};
 
 
 
 
 searchLoveButton.addEventListener('click', clearResults);
-searchLoveButton.addEventListener('click', runLove); 
+searchLoveButton.addEventListener('click', checkInputs);
+
+
+
+
 
 
 
