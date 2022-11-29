@@ -3,14 +3,19 @@ body {
     justify-content: center;
     background-color: rgb(30, 41, 102);
 }
-h1,h2 { font-family: Marvel; 
-     font-style: italic;
-      font-variant: normal;
-       font-weight: 700;
-        line-height: 14px; } 
+
+/* This is for the Marvel Font */
+h1, h2 { 
+    font-family: Marvel; 
+    font-style: italic;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 14px; }
+
 p {
     color: white;
 }
+
 /* Heart Emoji */
 #heart { 
     position: relative; 
@@ -39,7 +44,6 @@ p {
 }
 
 /* autocomplete styling */
-
 .ui-menu, .ui-menu-item, .auto-complete {
     z-index: 1000;
     list-style-type: none;
@@ -57,7 +61,7 @@ p {
 }
 
 .ui-menu-item:hover {
-    background-color: red;
+    background-color: rgb(30, 41, 102);
     color: white;
 }
 
