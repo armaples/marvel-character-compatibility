@@ -1,8 +1,41 @@
 body {
     display: flex;
     justify-content: center;
-    /* align-items: center; */
-    background-color: rgb(31, 19, 102);
+    background-color: rgb(30, 41, 102);
+}
+h1,h2 { font-family: Marvel; 
+     font-style: italic;
+      font-variant: normal;
+       font-weight: 700;
+        line-height: 14px; } 
+p {
+    color: white;
+}
+/* Heart Emoji */
+#heart { 
+    position: relative; 
+    width: 100px; 
+    height: 90px; 
+    display: inline-block;
+} 
+
+#heart:before, #heart:after { 
+    position: absolute; 
+    content: ""; 
+    left: 50px; 
+    top: 0; 
+    width: 50px; 
+    height: 80px; 
+    background: red; 
+    border-radius: 50px 50px 0 0; 
+    transform: rotate(-45deg); 
+    transform-origin: 0 100%; 
+} 
+
+#heart:after { 
+    left: 0; 
+    transform: rotate(45deg); 
+    transform-origin :100% 100%; 
 }
 
 /* autocomplete styling */
@@ -28,7 +61,7 @@ body {
     color: white;
 }
 
-#userInput {
+#userInput, #nameInput {
     width: 250px;
 }
 
