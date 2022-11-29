@@ -1,7 +1,7 @@
 # MARVELous Love
 
 ## Description
-MARVELous Love is an app that allows you to test your compatibility with any Marvel Character. The application utilizes Marvel API and the Love Calculator API in order to calculate compatibility between a user-inputed name and a chosen Marvel character. The motivation for this project was to create a fun, silly app that one could use for personal entertainment purposes. The user can  
+MARVELous Love is an app that allows you to test your compatibility with any Marvel Character. The application utilizes Marvel API and the Love Calculator API in order to calculate compatibility between a user-inputed name and a chosen Marvel character. The motivation for this project was to create a fun, silly app that one could use for personal entertainment purposes.   
 
 ## Table of Contents
 
