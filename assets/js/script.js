@@ -9,6 +9,7 @@ $(document).ready(function() {
 
     // Create autocomplete function for input field
     $("#userInput").autocomplete({
+        // User must type at least one character for autocomplete to show up
         minLength: 1,
         
         source: function(request, response, url){
@@ -17,6 +18,7 @@ $(document).ready(function() {
                 dataType: "json",
                 data: {
                     nameStartsWith: request.term,
+                    // Only a maximum of 5 names will show
                     limit: 5,
                 },
                 success: function (data) {
@@ -30,14 +32,10 @@ $(document).ready(function() {
             })
         }
     });
-});
-                             
-
-
+});                 
 
 var resultContainer = document.getElementById('result');
 var searchLoveButton = document.getElementById('love-button');
-
 
 function runLove() {
 const options = {
@@ -76,7 +74,5 @@ const options = {
             localStorage.setItem('lovePercent', lovePercent.textContent);
             localStorage.setItem('loveRes', loveRes.textContent);
         })};
+        
 searchLoveButton.addEventListener('click', runLove); 
-
-
-

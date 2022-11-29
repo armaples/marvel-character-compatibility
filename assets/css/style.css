@@ -1,4 +1,4 @@
-body{
+body {
     display: flex;
     justify-content: center;
     /* align-items: center; */
@@ -31,9 +31,11 @@ body{
 #userInput {
     width: 250px;
 }
+
 .ui-helper-hidden {
     display: none;
 }
+
 .ui-helper-hidden-accessible {
     border: 0;
     clip: rect(0 0 0 0);
@@ -44,6 +46,7 @@ body{
     position: absolute;
     width: 1px;
 }
+
 .ui-helper-reset {
     margin: 0;
     padding: 0;
