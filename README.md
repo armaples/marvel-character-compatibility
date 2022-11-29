@@ -1,7 +1,7 @@
 # MARVELous Love
 
 ## Description
-MARVELous Love is an app that allows you to test your compatibility with any Marvel Character. The application utilizes Marvel API and the Love Calculator API in order to calculate compatibility between a user-inputed name and a chosen Marvel character. The motivation for this project was to create a fun, silly app that one could use for personal entertainment purposes. The user can  
+MARVELous Love is an app that allows you to test your compatibility with any Marvel Character. The application utilizes Marvel API and the Love Calculator API in order to calculate compatibility between a user-inputed name and a chosen Marvel character. The motivation for this project was to create a fun, silly app that one could use for personal entertainment purposes.   
 
 ## Table of Contents
 
@@ -10,8 +10,7 @@ MARVELous Love is an app that allows you to test your compatibility with any Mar
 - [Languages Used](#languages-used)
 - [Important Links](#important-links)
 - [Credits](#credits)
-- [License](#license)
-    - [MIT License](#mit-license)
+- [MIT License](#mit-license)
 
 ## Installation
 
@@ -23,17 +22,17 @@ MARVELous Love is an app that allows you to test your compatibility with any Mar
 
 ## Application Preview
 
-![Screenshot](png goes here)
+![Screenshot](./assets/images/appPreview.png)
 - Above is a screenshot of what the page looks like.
 
-![Screenshot](gif goes here)
-- The page is responsive and elements will adjust depending on size.
+![Screenshot](./assets/images/image1.png)
+- When you start typing in a Marvel character, the autocomplete box will help you narrow your results.
 
-![Screenshot](gif goes here)
-- This is what happens when you start typing a marvel character name. 
+![Screenshot](./assets/images/image2.png)
+- After pressing submit, the following results will show up.
 
-![Screenshot](gif goes here)
-- This is what happens when you calculate the results.
+![Screenshot](./assets/images/image3.png)
+- The results will save in local storage.
 
 ## Languages Used
 
@@ -59,9 +58,7 @@ MARVELous Love is an app that allows you to test your compatibility with any Mar
 - [Marvel API](https://developer.marvel.com/)
 - [LoveCalculator API](https://rapidapi.com/ajith/api/love-calculator)
 
-## License
-
-### MIT License
+## MIT License
 
 Copyright (copy) 2022 MARVELous Love - Alexie Alcide, Alyssa Maples, Adam Pierce, Ethan Quinlan
 
